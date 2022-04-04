@@ -16,8 +16,8 @@ public class More {
         Arrays.sort(two);
         System.out.println(Arrays.toString(two));
 
-        int[] three = new int[5];
-        Arrays.fill(three, 42);
+        int[] three = new int[5];    //creo un array lungo 5 ed è riempito di 0
+        Arrays.fill(three, 42);    //se voglio riempire un array con un certo valore
         System.out.println(Arrays.toString(three));
 
         System.out.print("Comparing arrays: ");
