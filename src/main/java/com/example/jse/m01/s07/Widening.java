@@ -11,7 +11,7 @@ public class Widening {
 
         System.out.println(aDouble);
 
-        char aChar = (char) aShort;
+        char aChar = (char) aShort;  //carattere ASCII che ha codifica 42 è un asterisco quindi me lo fa vedere come asterisco perchè char è un carattere non un numero
         int anotherInt = aChar;
 
         // notice the difference between print() and println()
@@ -25,7 +25,7 @@ public class Widening {
         System.out.print(" <-> ");
         System.out.println(asterAsInt);
 
-        // widening a negative value works as expected
+        // widening a negative value works as expected     modo in cui vengono memorizzati i negativi = complemento a 1 si alza tutto a 1
         // [11111111] -> -1
         // [11111111][11111111][11111111][11111111] -> -1
         // this would be a mistake: [00000000][00000000][00000000][11111111] -> 255
@@ -35,7 +35,7 @@ public class Widening {
         System.out.print(" [byte -> int] ");
         System.out.println(minusOne32Bit);
 
-        long aBigLongValue = 1_000_000_000_000_000_000L;
+        long aBigLongValue = 1_000_000_000_000_000_000L;    //conversione da long a float, non viene bene per problemi di arrotondamento che non si ha con i double
         float aFloatApproximation = aBigLongValue;
         double aDoubleConversion = aBigLongValue;
         System.out.print(aBigLongValue);

@@ -1,6 +1,6 @@
 package com.example.jse.m01.s07;
 
-public class Narrowing {
+public class Narrowing {                       //devo dirglielo espressamente che voglio narroware
     public static void main(String[] args) {
         double aDouble = 42;
         float aFloat = (float) aDouble;
