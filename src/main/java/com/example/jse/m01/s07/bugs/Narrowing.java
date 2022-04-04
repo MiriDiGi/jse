@@ -6,7 +6,7 @@ public class Narrowing {
         int value = 1_000_000;
         System.out.println(value);
 
-        byte x = (byte) value;
+        byte x = (byte) value;  //int è troppo grande per essere visto come un byte
         System.out.println(x);
     }
 }

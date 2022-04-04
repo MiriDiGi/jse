@@ -10,7 +10,7 @@ public class Narrowing3 {
         System.out.println("Three billions (double) casted to int gives int max value");
         System.out.println(maxInInt);
 
-        aLargeValue *= 2;
+        aLargeValue *= 2;    //l'asterisco vuol dire raddoppialo
         maxInInt = (int) aLargeValue;
         System.out.println("Six billions (double) casted to int gives still int max value!");
         System.out.println(maxInInt);
