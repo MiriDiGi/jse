@@ -14,5 +14,8 @@ public class Two {
         System.out.println(Arrays.deepToString(two));
         // (2) Convert just the Italian greetings in a string and print it
         System.out.println(Arrays.deepToString(two[0]));
+        // o
+        String s = Arrays.deepToString(two[0]);
+        System.out.println(s);       
     }
 }
