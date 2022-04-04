@@ -14,5 +14,8 @@ public class One {
         System.out.println(one[one.length - 1]);
         // (2) convert the array to a string and print it 
         System.out.println(Arrays.toString(one));
+        // o
+        String s = (Arrays.toString(one));
+        System.out.println(s);
     }
 }
