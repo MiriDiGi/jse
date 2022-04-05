@@ -28,7 +28,8 @@ public class Unary {
         System.out.print(", result is ");
         System.out.println(result);
 
-        result = value++;
+        result = value++;  //incrementa il value MA nel result tieni il valore che c'era prima.
+        // quindi result è 1 ma value è 2
         // same as:
 //      result = value;
 //      value = value + 1;
@@ -38,6 +39,8 @@ public class Unary {
         System.out.print(", result is ");
         System.out.println(result);
 
+        //stessa cosa valore è decrementato MA il risultato è quello che c'era prima quindi 
+        //value 1 result 2
         result = value--;
         System.out.print("result = value--: ");
         System.out.print("value is ");
