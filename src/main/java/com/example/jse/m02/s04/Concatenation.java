@@ -7,12 +7,15 @@ public class Concatenation {
         System.out.println(5 + 7); // 12
 
         // cast to string and concatenate
-        System.out.print("5 + \"7\": ");
-        System.out.println(5 + "7"); // 57
+        System.out.print("5 + \"7\": "); //prima si scriveva così
+        System.out.print("""
+        		5 + "7":"""); //così fa schifo
+        
+        System.out.println(5 + "7"); // 57 perchè concatena le stringhe convertendo il 5 in una stringa
 
         // add, cast to string and concatenate
         System.out.print("5 + 7 + \"4\": ");
-        System.out.println(5 + 7 + "4"); // -> 124
+        System.out.println(5 + 7 + "4"); // -> 124 somma 5+7 poi converte il risultato in stringa e lo concatena con 4
 
         System.out.println("Resistence" + " is " + "useless");
         System.out.println("Solution: " + 42);
@@ -24,10 +27,11 @@ public class Concatenation {
 
         String s = "Hello";
         // both t and s refer to the same object
-        String t = s;
+        String t = s; //t e s qui si riferiscono entrambi ad Hello
 
         // reference to a different object created by concatenation
-        s += 3;
+        s += 3; //ad s mi concatena 3, non mi somma 3 volte la stringa, crea una nuova stringa con l'oggetto s Hello3
+        //prima s e t avevano lo stesso reference, ora invece s si riferisce a Hello3 e t a Hello e basta
 
         System.out.print("+= on a string generate a new object: ");
         System.out.println(s);
