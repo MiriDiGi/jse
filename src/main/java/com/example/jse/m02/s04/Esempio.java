@@ -8,10 +8,22 @@ public class Esempio {
 	s += " Miriam!";
 	System.out.println(s);
 	
-	final String q = "ciao,";
-	String w = q;
-	w += (" Miriam!");
+	String q = "ciao,"; //la stringa è già immutabile, non serve il final
+	String w = "hello!";
+	
+	w = q; //lo stesso id che c'è in q ora c'è in w
+	
 	System.out.println(w);
 	System.out.println(q);
+	
+	//se mettiamo il final non possiamo dargli lo stesso reference (lo metto tra commenti così non mi da il bug)
+	
+	final String x = "ciao!";
+//	String y = "hello!";
+//	x = y;
+	System.out.println(x);
+	
+	
+	
 	}
 }
