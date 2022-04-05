@@ -22,26 +22,26 @@ public class Arithmetic {
 
         // Type range
         System.out.print("Overflow! 1_000_000 * 3_000 = ");
-        System.out.println(1_000_000 * 3_000); // 30
+        System.out.println(1_000_000 * 3_000); // siccome il risultato non ci sta nell'intero diventa un pasticcio.
 
         System.out.println("---");
-//        System.out.println(a / 0); // ArithmeticException
+//      System.out.println(a / 0); // ArithmeticException per questo è commentato altrimenti esplode tutto e termina
 
         double c = 3.0;
 
         System.out.print("10 + 3.0 = ");
-        System.out.println(a + c); // 13.0
+        System.out.println(a + c); // 13.0 di nascosto fa diventare a un double fa un cast nascosto
 
         // Floating point division
         System.out.print("10 / 3.0 = ");
-        System.out.println(a / c); // 3.3333333333333335
+        System.out.println(a / c); // 3.3333333333333335 come sopra
 
         System.out.print("10 % 3.0 = ");
         System.out.println(a % c); // 1.0
 
         // Real numbers are not always precisely represented
         System.out.print("3.0 - 2.1 = ");
-        System.out.println(c - 2.1); // 0.8999999999999999
+        System.out.println(c - 2.1); // 0.8999999999999999 non è preciso
 
         // Divide by zero for real numbers leads to infinity
         System.out.print("3.0 / 0 = ");
@@ -76,7 +76,7 @@ public class Arithmetic {
         System.out.println(alpha);
 
         // risky! implicit narrowing!
-        // alpha = (int) (alpha + 3_000_000_000L);
+        // alpha = (int) (alpha + 3_000_000_000L); 
         alpha += 3_000_000_000L;
         System.out.print("alpha += 3_000_000_000L --> alpha = ");
         System.out.println(alpha);
