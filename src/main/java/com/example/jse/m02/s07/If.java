@@ -4,7 +4,7 @@ public class If {
     public static void main(String[] args) {
         // condition is true when no argument is passed
         if (args.length == 0) {
-            System.out.println("You didn't pass me any parameter!");
+            System.out.println("You didn't pass me any argument!");  //questa stringa non viene stampata se passo un argomento (se vado in run configuratione passo un argomento lui non stampa questa riga)
         }
 
         // always executed
