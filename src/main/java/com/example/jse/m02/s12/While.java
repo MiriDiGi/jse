@@ -2,8 +2,8 @@ package com.example.jse.m02.s12;
 
 public class While {
     public static void main(String[] args) {
-        int i = 0;
-        while (i < args.length) {
+        int i = 0;     //inizializziamo variabile
+        while (i < args.length) {   //finchè i < dalla lunghezza dell'argomento
             System.out.println("The argument " + i + " is " + args[i]);
 
             // same as above, more verbosely, see also StringBuilder
