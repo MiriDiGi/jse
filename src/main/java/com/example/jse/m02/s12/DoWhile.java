@@ -3,7 +3,7 @@ package com.example.jse.m02.s12;
 public class DoWhile {
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.out.println("Please, pass me some arguments");
+            System.out.println("Please, pass me some arguments");     //questo è obbligatorio, altrimenti crasha, possiamo farlo partire solo se può controllare una volta
             return;
         }
 
