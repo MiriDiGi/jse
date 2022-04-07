@@ -17,8 +17,8 @@ public class Exceptional {
         System.out.println("Square root is " + radix);
     }
 
-    public static double mySqrt(double value) {
-        if (value < 0 || Double.isNaN(value)) {
+    public static double mySqrt(double value) {             //tiro un'eccezione
+        if (value < 0 || Double.isNaN(value)) { 
             throw new IllegalArgumentException("Bad input: " + value);
         }
 
