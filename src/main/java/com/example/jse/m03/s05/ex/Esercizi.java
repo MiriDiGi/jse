@@ -39,7 +39,7 @@ public class Esercizi {
 	static String substring(String s, int begin, int end) {       //metodo substring
 		StringBuilder nuova = new StringBuilder();
 		for (int i = begin; i < end; i++) {
-			nuova.append(s.charAt(i));
+			nuova.append(s.charAt(i));                          //usiamo append per aggiungere un carattere
 		}
 		return nuova.toString();                                //converto lo stringbuilder in una stringa
 	}
