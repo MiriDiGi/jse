@@ -10,11 +10,11 @@ public class Esercizi2 {
 	
 	}
 	
-	static String corta(String[] array) {
-		String min = array[0];                         //metodo ordinare un array di stringhe in base alla loro lunghezza
-		for (int i =1; i < array.length; i++) {
-			if (array[i].length() < min.length()) {
-			min = array [i];
+	static String corta(String[] data) {
+		String min = data[0];                         //metodo ordinare un array di stringhe in base alla loro lunghezza
+		for (int i =1; i < data.length; i++) {
+			if (data[i].length() < min.length()) {
+			min = data [i];
 			}
 		}
 		return min;
