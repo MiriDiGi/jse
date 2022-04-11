@@ -9,7 +9,10 @@ public class Exercise1 {
      * @return the sum of all the numbers, or zero
      */
     public static long sum(int first, int last) {
-        // TODO
-        throw new UnsupportedOperationException("Not yet implemented");
+    	long result = 0;
+    	for (int i = first; i <= last; i++) {
+    		result += i;
+    	}
+    	return result;
     }
 }

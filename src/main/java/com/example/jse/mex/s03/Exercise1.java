@@ -8,7 +8,13 @@ public class Exercise1 {
      * @return "positive", "negative", or "zero"
      */
     public static String checkSign(int value) {
-        // TODO
-        throw new UnsupportedOperationException("Not yet implemented");
+     if (value > 0) {
+    	 return "positive";
+     }
+     else if (value == 0) {
+    	 return "zero";
+     }
+    	 return "negative";
+     }
     }
-}
+

@@ -8,7 +8,10 @@ public class Exercise2 {
      * @return true if odd
      */
     public static boolean isOdd(int value) {
-        // TODO
-        throw new UnsupportedOperationException("Not yet implemented");
+    	if (value % 2 == 1) {
+    		return true;
+    	}
+    	return false;
     }
+    //possiamo scrivere anche return value % 2 == 1
 }
