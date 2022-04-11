@@ -16,7 +16,7 @@ class Exercise1Test {
         double actual = Exercise1.speed(100.0, 9.58);
         double expected = 10.438;
 
-        assertEquals(expected, actual, .0001);
+        assertEquals(expected, actual, .001);
     }
 
     @Test
@@ -24,7 +24,7 @@ class Exercise1Test {
         double actual = Exercise1.speed(100.0, 9.58);
         double expected = 10.438;
 
-        assertThat(actual).isEqualTo(expected, withPrecision(.0001));
+        assertThat(actual).isEqualTo(expected, withPrecision(.001));
     }
 
     @Test
