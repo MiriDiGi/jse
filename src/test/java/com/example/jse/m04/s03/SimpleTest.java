@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class SimpleTest {
 
-    @Test
+    @Test                 //annotazione, modo in cui junit capisce come eseguire i test
     void negate() {
         fail("Not yet implemented");
     }

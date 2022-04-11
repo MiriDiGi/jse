@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class Exercise1 {
     private static final Logger log = Logger.getGlobal();
-
+ 
     /**
      * Calculate the average speed
      * 

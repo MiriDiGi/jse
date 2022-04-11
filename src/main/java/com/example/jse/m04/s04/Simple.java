@@ -5,3 +5,4 @@ public class Simple {
         return -value;
     }
 }
+ 

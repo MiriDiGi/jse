@@ -46,7 +46,7 @@ public class Main {
             int x = 7 / 0;
             System.out.println("x = " + x);
         } catch (Exception ex) {
-            log.log(Level.SEVERE, "Cannot divide an integer by zero", ex);
+            log.log(Level.SEVERE, "Cannot divide an integer by zero", ex);  //messaggio per il programmatore
             System.out.println("Sorry, something went wrong ...");
         }
     }

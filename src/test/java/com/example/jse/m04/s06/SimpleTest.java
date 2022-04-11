@@ -34,7 +34,7 @@ class SimpleTest {
     }
 
     private boolean isPositive(int value) {
-        return value > 0;
+        return value > 0;                         //questi due non vengono testati, non sono test
     }
 
     private String nullIfPositive(int value) {
