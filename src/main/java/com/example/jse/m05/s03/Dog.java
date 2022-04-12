@@ -14,7 +14,7 @@ public class Dog {
         this.breed = "Mixed";
         log.info("A new anonymous dog has been created");
     }
-
+                                                                      //questi 3 sono tutti costruttori che hanno parametri diversi
     public Dog(String name) {
         // "this" name is initialized with the parameter name
         this.name = name;
@@ -22,13 +22,13 @@ public class Dog {
         log.info("A new dog named " + name + " has been created");
     }
 
-    public Dog(String name, String breed) {
+    public Dog(String name, String breed) {         //questo è un metodo costruttore!
         this.name = name;
         this.breed = breed;
         log.info(String.format("A new dog named %s and breed %s has been created", name, breed));
     }
 
     public void bark() {
-        System.out.println(breed + " " + name + ": woof");
-    }
+        System.out.println(breed + " " + name + ": woof");        //sa che mi deve richiamare l'ultimo costruttore quello con name e breed
+    } 
 }
