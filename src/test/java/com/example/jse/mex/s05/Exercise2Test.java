@@ -12,4 +12,20 @@ class Exercise2Test {
 
         assertThat(actual).isEqualTo(expected);
     }
+    
+    @Test
+    void isNotPalindrome() {
+        boolean actual = Exercise2.isPalindrome("babba");
+        boolean expected = false;
+
+        assertThat(actual).isEqualTo(expected);
+    }
+    
+    @Test
+    void isPalindromeOdd() {
+        boolean actual = Exercise2.isPalindrome("abmba");
+        boolean expected = true;
+
+        assertThat(actual).isEqualTo(expected);
+    }
 }

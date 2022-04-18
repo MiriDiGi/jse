@@ -26,11 +26,12 @@ public class Dog {
     public void setOwner(String owner) {
         this.owner = owner;
     }
-
+    
+                                           
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) {        //override dell'equals definito nella classe object
         // or use IDE auto-generation tool
-        if (obj == this) {
+        if (obj == this) {                     //se mi passi il reference allo stesso oggetto èè true che sono uguali
             return true;
         }
         if (!(obj instanceof Dog)) {
@@ -38,7 +39,7 @@ public class Dog {
         }
 
         Dog that = (Dog) obj;
-        return Objects.equals(this.name, that.name) && Objects.equals(this.owner, that.owner);
+        return Objects.equals(this.name, that.name) && Objects.equals(this.owner, that.owner);  //fa il confronto tra proprietà
     }
 
     @Override
@@ -49,8 +50,14 @@ public class Dog {
         return Objects.hash(name, owner);
     }
 
-    @Override
+    @Override                         //annotazione che dice che toString viene da una classe super, ovveride non è obbligatoria, 
     public String toString() {
+        // or use IDE auto-generation tool
+        return "Dog [" + name + ", " + owner + "]";
+    }
+    
+                                     //questo è un overload non un override!!! lavora solo sulla classe cane!!!
+    public String toString(int i) {
         // or use IDE auto-generation tool
         return "Dog [" + name + ", " + owner + "]";
     }

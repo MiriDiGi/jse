@@ -12,7 +12,7 @@ public class Cat {
 	 * @param name  the cat name
 	 * @param color the cat color
 	 */
-	public Cat(String name, String color) { // questo è il costruttore
+	public Cat(String name, String color) { // questo è il costruttore non ha il return type
 
 		// TODO: initialize the object
 
@@ -22,7 +22,7 @@ public class Cat {
 		// TODO: increase the counter, vogliamo mettere a posto il numero di gatti
 		// corrente
 
-		count += 1; // posso fare anche ++count
+		count += 1; // posso fare anche ++count, è una proprietà statica, mi segnala quanti gatti sono stati creati in questo momento
 	}
 
 	/**

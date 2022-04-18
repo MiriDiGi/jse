@@ -12,4 +12,12 @@ class Exercise1Test {
 
         assertThat(actual).isEqualTo(expected);
     }
+    
+    @Test
+    void reverseStringLong() {
+        String actual = Exercise1.reverse("qwert");
+        String expected = "trewq";
+
+        assertThat(actual).isEqualTo(expected);
+    }
 }
