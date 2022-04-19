@@ -9,7 +9,7 @@ public class Pet {
         this.name = "Unknown";
     }
 
-    public Pet(String name) {
+    public Pet(String name) {           
         // useless explicit call to super ctor
         super();
         this.name = name;
