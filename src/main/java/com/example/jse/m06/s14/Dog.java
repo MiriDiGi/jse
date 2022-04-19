@@ -15,7 +15,7 @@ public class Dog extends Pet {                           //dog estende pet
     }                                        //se l'utente non passa la velocità usa quella standard, sta invocando quello sotto praticamente
 
     public Dog(String name, double speed) {        
-        super(name);
+        super(name);                          //super costruttore, specifica quale costruttore della classe madre deve essere invocato
         this.speed = speed;
     }
 
