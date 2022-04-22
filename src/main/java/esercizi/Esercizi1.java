@@ -1,8 +1,8 @@
-package com.example.jse.m03.s05.ex;
+package esercizi;
 
 import java.util.Arrays;
 
-public class Esercizi {
+public class Esercizi1 {
 
 	public static void main(String[] args) {
 		int risultato = indexOf("hello", 'l');           // metodo indexOf

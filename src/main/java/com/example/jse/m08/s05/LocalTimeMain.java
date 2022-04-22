@@ -6,7 +6,7 @@ import java.time.temporal.ChronoField;
 public class LocalTimeMain {
     public static void main(String[] args) {
         // time factories
-        System.out.printf("A time (by 'of'): %s%n", LocalTime.of(11, 15, 24));
+        System.out.printf("A time (by 'of'): %s%n", LocalTime.of(11, 15, 24));   //discorsi identici al LocalDate
         System.out.printf("A time (parse): %s%n", LocalTime.parse("11:15:24"));
         LocalTime now = LocalTime.now();
         System.out.printf("Current time (now): %s%n", now.toString());

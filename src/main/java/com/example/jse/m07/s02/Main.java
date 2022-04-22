@@ -3,8 +3,8 @@ package com.example.jse.m07.s02;
 public class Main {
     public static void main(String[] args) {
         // the caller should check the return value to ensure it is "good"
-        double result = noExceptionSquareRoot(-7);
-        if (result == -1) {
+        double result = noExceptionSquareRoot(-7);  //vuole fare la radice quadrata di un numero negativo, che non si fa quindi non un'eccezione ma fa come sotto
+        if (result == -1) {                           //se il valore che torna dal metodo è -1 segnala che qualcosa è andato storto
             System.out.println("...!!!");
         }
 
@@ -15,16 +15,16 @@ public class Main {
         System.out.println("result is " + result);
 
         // in case of exception, if the caller do not take any further step, the program terminates!
-        try {
+        try {                                //prova a gestire l'eccezione
             result = squareRoot(-7);
-        } catch (Exception ex) {
+        } catch (Exception ex) {            //gestisci l'eccezione nel blocco che specifico qui
             // maybe there is a possible alternative approach
 //            System.out.println("... !!! I use instead 5");
 //            result = 5;
 
             // maybe I could just tell the user why I can't go on with the program
-            System.out.println("Bad input!");
-            throw new IllegalStateException(ex);
+            System.out.println("Bad input!");       //dico che mi ha dato qualcosa di inaccettabile
+            throw new IllegalStateException(ex);    //tiro un'altro throw e siccome nessuna la gestisce termino il programma, nel log vedo il motivo per cui è terminato
         }
 
         // exceptions are expensive, also in Java they are not always used
@@ -41,7 +41,7 @@ public class Main {
 
     }
 
-    private static double squareRoot(int value) throws Exception {
+    private static double squareRoot(int value) throws Exception {                //throw interrompe la normale esecuzione del programma, va gestita l'eccezione
         if (value < 0) {
             throw new Exception("Bad input, negative values are not accepted");
         }
@@ -53,7 +53,7 @@ public class Main {
      * @param value
      * @return -1 if something went wrong
      */
-    private static double noExceptionSquareRoot(int value) {
+    private static double noExceptionSquareRoot(int value) {  //torna - 1 invece di tirare l'eccezione
         if (value < 0) {
             return -1;
         }

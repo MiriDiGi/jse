@@ -33,7 +33,7 @@ class SimpleTest {
         Simple simple = new Simple();
 
         try {
-            int actual = simple.negate(Integer.MIN_VALUE);
+            int actual = simple.negate(Integer.MIN_VALUE);   //caso in cui non voglio che riturni negativo ma mi tira un'eccezione
             fail("An IllegalArgumentException was expected, instead I've got " + actual);
         } catch (IllegalArgumentException iae) {
             String message = iae.getMessage();

@@ -80,4 +80,12 @@ public class Example {
 
         return value * 2;
     }
+    
+    public static int max(int[] a) {
+    	if (a == null || a.length == 0) {           //se a è un null o la lunghezza è 0 tiro l'eccezione
+    		throw new IllegalArgumentException();	
+    	}
+    	int result = a[0];
+    	return result;
+    }
 }

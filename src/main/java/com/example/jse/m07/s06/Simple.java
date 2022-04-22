@@ -8,9 +8,9 @@ public class Simple {
      * @return the negated input
      * @throws IllegalArgumentException when it is not possible to negate correctly the input value
      */
-    public int negate(int value) {
+    public int negate(int value) {          //sembra facile ma ha un lato oscuro, positivi e negativi non sono simmetrici perchè c'è lo 0 che rompe la simmetria,  gli int sono più grandi  di quelli che possono essere contenuti, dovrei usare un long
         if (value == Integer.MIN_VALUE) {
-            throw new IllegalArgumentException("Can't negate MIN_VALUE");
+            throw new IllegalArgumentException("Can't negate MIN_VALUE");   //non posso quindi tirare l'eccezione
         }
         return -value;
     }
