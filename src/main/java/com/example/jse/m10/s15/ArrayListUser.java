@@ -5,17 +5,17 @@ import java.util.List;
 
 public class ArrayListUser {
     public static void main(String[] args) {
-        List<Integer> empty = new ArrayList<>();
+        List<Integer> empty = new ArrayList<>();    //posso mettere il tipo tra ArrayList<Integer> ma java lo legge già dall'altra parte dell'uguale e lo fa automaticamente
         recap("An empty list", empty);
 
-        List<Integer> sizedEmpty = new ArrayList<Integer>(5);
+        List<Integer> sizedEmpty = new ArrayList<Integer>(5);   //specifico la capacità, spazio che ha allocato per inserire gli elementi
         recap("An empty list w/ given capacity", sizedEmpty);
 
         // an unmodifiable list
-        var temp = List.of(23, 12, 18, 5, 42, 88);
+        var temp = List.of(23, 12, 18, 5, 42, 88);   //list.of è uno static factory method che mi permette di creare la lista
         // a fixed-sized list backed by an array
 //        var temp = Arrays.asList(23, 12, 18, 5);
-        ArrayList<Integer> al = new ArrayList<>(temp);
+        ArrayList<Integer> al = new ArrayList<>(temp);   //se voglio che sia modificabile
         recap("A list by copy constructor", al);
 
         al.add(56);

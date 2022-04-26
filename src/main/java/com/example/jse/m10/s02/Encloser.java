@@ -44,7 +44,7 @@ public class Encloser {
         }
     }
 
-    private class InnerPrivate implements Getter {
+    private class InnerPrivate implements Getter {    //definita dentro encloser ed essendo privata può essere usata solo dai metodi di encloser
         public InnerPrivate() {
             log.info("An object of an inner private class created, full access to class property: " + value);
         }

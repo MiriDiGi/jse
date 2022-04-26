@@ -2,7 +2,7 @@ package com.example.jse.m10.s04;
 
 import java.util.Objects;
 
-public class Dog implements Comparable<Dog> {
+public class Dog implements Comparable<Dog> {   //voglio avere un cane comparabile perchè compararlo con gli altri cani. il metodo è compareTo <T> dove T sta per generico così che comparable sa che sta comparando il tipo cane
     private String name;
     private String owner;
 
@@ -56,10 +56,10 @@ public class Dog implements Comparable<Dog> {
     }
 
     @Override
-    public int compareTo(Dog that) {
-        int cmp = this.name.compareTo(that.name);
+    public int compareTo(Dog that) {               //confronto nome e nome dell'owner
+        int cmp = this.name.compareTo(that.name);   //confronto Tom carl con Tom bob, hanno nome uguale quindi torna 0
         if (cmp == 0) {
-            return this.owner.compareTo(that.owner);
+            return this.owner.compareTo(that.owner);   //dato che i nomi sono uguali fa il confronto sugli owner che essendo diversi torna -1
         }
         return cmp;
     }

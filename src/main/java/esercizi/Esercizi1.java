@@ -1,6 +1,7 @@
 package esercizi;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Esercizi1 {
 
@@ -52,7 +53,22 @@ public class Esercizi1 {
 		System.out.println(x);
 		System.out.println();
 		
+		String stringa = "pollo";
+		String k = missingChar(stringa, 2);          //metodo togliere carattere ad un certo indice
+		System.out.println(k);
 		
+
+		 int[] nums = new int [4];                  //devo creare un array sapendo la dimensione perchè gli array di basso livello non possono essere creati senza saperlo
+		 System.out.println("passami 4 interi");
+		 try (Scanner scanner = new Scanner (System.in)) {
+			 int cur = 0;
+			 	while (scanner.hasNext() && cur < nums.length) {            //controllo se c'è qualcosa
+			 		if (scanner.hasNextInt()) {                     //controllo se ci sono interi
+			 			nums[cur] = scanner.nextInt();
+			 			cur++;
+			 		}
+			 	}
+		 	}
 	}
 
 // ----------------------------------------------------------------------------------------------------------
@@ -147,5 +163,26 @@ public class Esercizi1 {
 	   return valore;
 	   }   
 	   
+	   public static String missingChar(String stringa, int n) {
+		   if (n <= stringa.length() && n >= 0) {
+		    StringBuilder sb = new StringBuilder(stringa);      //metodo levare carattere ad un certo indice
+		    sb.deleteCharAt(n);
+		    return sb.toString();
+		   }
+		   return stringa;
+		    }
 	   
+	   public static int bigDiff(int[] nums) {
+		   int min = nums[0];
+		   int max = nums[0];
+		   for (int i = 0; i <nums.length; i++) {
+		     if (max < nums[i]) {
+		       max = nums[i];
+		     } else if (min > nums[i]) {
+		       min = nums[i];
+		     }
+		 }
+		 return max - min;
+		 }
+
 }

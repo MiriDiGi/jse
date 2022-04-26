@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> li = new ArrayList<Integer>();
-        li.add(4);
+        List<Integer> li = new ArrayList<Integer>();  //creo un arraylist di interi, siccome int è un primitivo fa il wrapper!!!
+        li.add(4);                                      //controlla da solo che sia un intero
 
         noGenericTypeCheck(li);
         noGenericDowncast();
