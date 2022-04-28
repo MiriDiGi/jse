@@ -116,22 +116,29 @@ public class Exercise {
 //       throw new UnsupportedOperationException("Not yet implemented");
     	
     	List<Integer> result = new ArrayList<Integer>();
+    	if (data == null || data.length == 0) {            
+    		return result;
+    	}
     	Arrays.sort(data);
     	
-/*    	for (int i = 0; i < data.length-1; i++) {
+    	for (int i = 0; i < data.length-1; i++) {
     		if (data[i] != data[i+1]) {
     			result.add(data[i]);
     		} else {
-    			int j = i;
-    			for (; j < data.length-1; j++) {
-    				if (data[i] != data[j]) {
+    		
+    			for (; i < data.length-1; i++) {
+    				if (data[i] != data[i +1]) {
     					break;
     				}
     			} 
-    			i = j;
     		}
-  	}
-  */
+    	}
+    	if (data.length == 1) {
+    		result.add(data[0]);
+    	}
+    	else if (data [data.length -1] != data[data.length -2]) {         //mettere dentro l'ultimo elemento
+    		result.add(data[data.length -1]);
+    	}
 		return result;
     } 
 }
